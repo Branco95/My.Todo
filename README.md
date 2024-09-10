@@ -1,8 +1,6 @@
 
 # Welcome to My.Todo
 
-add logo from public folder
-
 ![My.Todo Logo](public/logo.png)
 
 Welcome to **My.Todo**! This is a modern, user-friendly to-do list app designed to help you efficiently manage your tasks. Whether you're tracking daily errands or long-term projects, My.Todo makes it easy to stay organized.
