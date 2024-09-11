@@ -62,7 +62,7 @@ export function NewTaskModal({ isVisible, toggleModal, newTask }: ModalProps) {
                             }
                             }
                             className="w-full"
-                            disabled={title ? false : true}
+                            disabled={title.trim() ? false : true}
                             color="green">
                             Add Task
                         </MyButton>

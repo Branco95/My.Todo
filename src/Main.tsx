@@ -10,7 +10,7 @@ function Main() {
   const [tasks, setTasks] = useState<Task[]>(JSON.parse(localStorage.getItem("tasks") || "[]"));
   const [filteredTasks, setFilteredTasks] = useState<Task[]>([]);
   const [searchTerm, setSearchTerm] = useState<string>("");
-  const [state, setState] = useState<string | undefined>("0"); 
+  const [state, setState] = useState<string | undefined>("0");
 
   const addTask = (title: string, description: string) => {
     const newTask = {
@@ -39,7 +39,7 @@ function Main() {
     setFilteredTasks(filterData(searchTerm, state || "0"));
   }, [searchTerm, state, tasks]);
 
-  
+
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
@@ -57,7 +57,7 @@ function Main() {
   };
 
   const getState = (value: string | undefined) => {
-    setState(value); 
+    setState(value);
   };
 
 

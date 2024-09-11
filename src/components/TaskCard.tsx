@@ -21,8 +21,8 @@ const TaskCard = ({ data, onDelete, state }: TaskCardProps) => {
 
     return (
         <>
-            <div className="p-4 max-w-sm " >
-                <div className={`flex rounded-lg border-gray-300 border min-h-[250px] max-h-[250px]  min-w-[250px] max-w-[250px] md:min-w-0 md:max-w-full ${data.completed ? 'bg-green-100' : ''} p-8 flex-col cursor-pointer shadow-lg transition-all duration-700 hover:scale-110`}>
+            <div className="p-4 w-full max-w-md " >
+                <div className={`flex rounded-lg border-gray-300 border min-h-[250px] max-h-[250px] w-full md:min-w-0 md:max-w-full ${data.completed ? 'bg-green-100' : ''} p-8 flex-col cursor-pointer shadow-lg transition-all duration-700 hover:scale-110`}>
                     <div className="flex items-center mb-3">
                         <div
                             className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0">

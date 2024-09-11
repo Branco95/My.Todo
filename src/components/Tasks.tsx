@@ -34,11 +34,11 @@ export default function Tasks({ data, onDeleteTask, onCompletedTask }: TaskProps
     }
 
     return (
-        <div>
+        <div className=''>
             <div className="flex flex-wrap justify-center lg:justify-start">
                 {data.map((task: any) => {
                     return (
-                        <div key={task.id} className='  md:w-1/3 lg:w-1/4 xl:w-1/5 '>
+                        <div key={task.id} className='w-full  md:w-1/3 lg:w-1/4 xl:w-1/5 '>
                             <TaskCard data={task} onDelete={handleDeleteTask} state={onCompletedTask} />
                         </div>
                     );
